@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Підключення CSS -->
+</head>
+<body>
+
+    <div class="container">
+        <h2>Реєстрація користувача</h2>
+        <form id="registrationForm">
+            <input type="text" id="name" placeholder="Ім'я" required>
+            <span class="error" id="nameError"></span>
+
+            <input type="email" id="email" placeholder="Email" required>
+            <span class="error" id="emailError"></span>
+
+            <input type="password" id="password" placeholder="Пароль (мін. 6 символів)" required>
+            <span class="error" id="passwordError"></span>
+
+            <input type="password" id="confirmPassword" placeholder="Підтвердити пароль" required>
+            <span class="error" id="confirmPasswordError"></span>
+
+            <input type="number" id="age" placeholder="Вік" required>
+            <span class="error" id="ageError"></span>
+
+            <div>
+                <label>Стать:</label>
+                <input type="radio" name="gender" value="Чоловік"> Чоловік
+                <input type="radio" name="gender" value="Жінка"> Жінка
+            </div>
+            <span class="error" id="genderError"></span>
+
+            <select id="group">
+                <option value="">Оберіть групу</option>
+                <option value="ІТ-101">ІТ-101</option>
+                <option value="ІТ-102">ІТ-102</option>
+                <option value="ІТ-103">ІТ-103</option>
+                <option value="ІТ-104">ІТ-104</option>
+            </select>
+            <span class="error" id="groupError"></span>
+
+            <button type="submit" class="btn">Зареєструватися</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script> <!-- Підключення JavaScript -->
+</body>
+</html>
