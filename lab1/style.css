@@ -1,0 +1,116 @@
+    <style>
+        /* Основні стилі сторінки */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+		body {
+			background: linear-gradient(to bottom, #ffe6f2, #ffffff);
+			
+		}
+
+        /* Контейнер для контенту */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        h1, h2 {
+            color: #d35400;
+            text-align: center;
+        }
+
+        ul {
+            background: #fce4ec;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        ul li {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #7f8c8d;
+            padding: 10px;
+            border-left: 4px solid #e91e63;
+            background: #fce4ec;
+            border-radius: 5px;
+        }
+
+        /* Стилізація таблиці */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #bdc3c7;
+            text-align: left;
+        }
+
+        th {
+            background: #e91e63;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f8bbd0;
+        }
+
+        /* Стилізація зображення */
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Посилання */
+        a {
+            color: #d35400;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Стилізація футера */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+	.image-container {
+    width: 300px; /* Adjust as needed */
+    margin: 20px auto; /* Center the image */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevents a small space below the image */
+}
+    </style>

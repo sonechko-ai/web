@@ -1,0 +1,73 @@
+/* Зміна кольорів */
+body {
+    background-color: #f4f4f4; /* Світло-сірий фон */
+    color: #333333; /* Темно-сірий текст */
+    font-family: 'Arial', sans-serif; /* Основний шрифт */
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Робота з шрифтами */
+h1, h2, h3 {
+    font-family: 'Georgia', serif; /* Додаємо стильний шрифт для заголовків */
+    color: #0077cc; /* Синій колір заголовків */
+}
+
+p {
+    font-family: 'Verdana', sans-serif; /* Шрифт для абзаців */
+    line-height: 1.6; /* Покращення читабельності тексту */
+}
+
+/* Відступи та поля */
+.container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Додаткові стилі для елементів */
+a {
+    color: #ff6600; /* Оранжевий колір для посилань */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cc5500; /* Темніший відтінок при наведенні */
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #0077cc;
+    padding-left: 15px;
+    margin-left: 20px;
+}
+
+button {
+    background-color: #28a745; /* Зелений фон */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838; /* Темніший зелений при наведенні */
+}
+
+/* Додаємо медіа-запити для адаптивності */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
