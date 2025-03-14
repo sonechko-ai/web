@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота 4: Вступ до JavaScript</title>
+</head>
+<body>
+  <h1>Лабораторна робота 4: Вступ до JavaScript</h1>
+  
+    <script>
+        // 1. Привітання користувача
+        let userName = prompt("Введіть ваше ім'я:");
+        alert(`Привіт, ${userName}! Радий тебе бачити!`);
+        console.log(`Привіт, ${userName}! Радий тебе бачити!`);
+
+        // 2. Проста арифметика
+        let num1 = parseFloat(prompt("Введіть перше число:"));
+        let num2 = parseFloat(prompt("Введіть друге число:"));
+        let variantNumber = parseInt(prompt("Введіть номер вашого варіанту:"));
+
+        if (variantNumber % 2 === 0) {
+            let sum = num1 + num2;
+            let difference = num1 - num2;
+            alert(`Сума: ${sum}, Різниця: ${difference}`);
+            console.log(`Сума: ${sum}, Різниця: ${difference}`);
+        } else {
+            let product = num1 * num2;
+            let quotient = num2 !== 0 ? (num1 / num2).toFixed(2) : "не визначено";
+            alert(`Добуток: ${product}, Частка: ${quotient}`);
+            console.log(`Добуток: ${product}, Частка: ${quotient}`);
+        }
+
+        // 3. Обчислення віку користувача
+        const currentYear = 2025;
+        const myAge = 25; // Вкажіть ваш вік тут
+        let birthYear = parseInt(prompt("Введіть ваш рік народження:"));
+        let userAge = currentYear - birthYear;
+        let ageDifference = Math.abs(myAge - userAge);
+
+        let ageMessage = `Вам ${userAge} років. `;
+        if (userAge > myAge) {
+            ageMessage += `Ви старші за мене на ${ageDifference} років.`;
+        } else if (userAge < myAge) {
+            ageMessage += `Ви молодші за мене на ${ageDifference} років.`;
+        } else {
+            ageMessage += "Ми ровесники!";
+        }
+
+        alert(ageMessage);
+        console.log(ageMessage);
+    </script>
+</body>
+</html>
